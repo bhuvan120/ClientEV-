@@ -8,7 +8,7 @@ export default function Hero() {
       
       <div className="container hero-grid">
         <div className="hero-content fade-in">
-          <h1 style={{fontSize: '4.5rem', marginBottom: '24px'}}>
+          <h1 className="hero-title" style={{fontSize: '4.5rem', marginBottom: '24px'}}>
             The Future Of <br />
             <span className="text-gradient">Electric Mobility</span>
           </h1>
@@ -27,22 +27,22 @@ export default function Hero() {
           
           <div className="hero-stats delay-300 slide-up" style={{display: 'flex', gap: '40px'}}>
             <div>
-              <h3 style={{fontSize: '2.5rem', fontWeight: 800, lineHeight: 1}}>150<span className="text-green">km</span></h3>
+              <h3 className="stat-value" style={{fontSize: '2.5rem', fontWeight: 800, lineHeight: 1}}>150<span className="text-green">km</span></h3>
               <p style={{color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '1px'}}>Max Range</p>
             </div>
             <div>
-              <h3 style={{fontSize: '2.5rem', fontWeight: 800, lineHeight: 1}}>85<span className="text-blue">km/h</span></h3>
+              <h3 className="stat-value" style={{fontSize: '2.5rem', fontWeight: 800, lineHeight: 1}}>85<span className="text-blue">km/h</span></h3>
               <p style={{color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '1px'}}>Top Speed</p>
             </div>
             <div>
-              <h3 style={{fontSize: '2.5rem', fontWeight: 800, lineHeight: 1}}>3.5<span className="text-green">hr</span></h3>
+              <h3 className="stat-value" style={{fontSize: '2.5rem', fontWeight: 800, lineHeight: 1}}>3.5<span className="text-green">hr</span></h3>
               <p style={{color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '1px'}}>Fast Charge</p>
             </div>
           </div>
         </div>
 
         <div className="hero-image fade-in delay-200" style={{position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <img src="/images/hero.png" alt="NamoEV Vechiles Scooter" style={{width: '100%', maxWidth: '800px', objectFit: 'contain', filter: 'drop-shadow(0 0 40px rgba(0,240,255,0.2))'}} />
+          <img src="/images/hero.png" alt="NamoEV Vechiles Scooter" className="hero-img-fluid" style={{width: '100%', maxWidth: '800px', height: '100%', maxHeight: '600px', objectFit: 'cover', borderRadius: '16px', filter: 'drop-shadow(0 10px 30px rgba(0,240,255,0.2))'}} />
           
           <div className="glass-card floating-ui" style={{position: 'absolute', top: '15%', right: '0%', padding: '12px 20px', borderRadius: '12px'}}>
             <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>

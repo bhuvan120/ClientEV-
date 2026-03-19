@@ -42,15 +42,13 @@ export default function Navbar() {
         </button>
       </div>
 
-      {isMenuOpen && (
-        <div className="mobile-menu glass" style={{position: 'absolute', top: 'var(--nav-height)', left: 0, right: 0, display: 'flex', flexDirection: 'column', padding: '24px', gap: '16px'}}>
-          <Link to="/" onClick={closeMenu}>Home</Link>
-          <Link to="/models" onClick={closeMenu}>Models</Link>
-          <Link to="/features" onClick={closeMenu}>Features</Link>
-          <Link to="/technology" onClick={closeMenu}>Technology</Link>
-          <Link to="/book" className="btn btn-primary" onClick={closeMenu} style={{marginTop: '20px', textAlign: 'center'}}>Book Test Ride</Link>
-        </div>
-      )}
+      <div className={`mobile-menu glass ${isMenuOpen ? 'open' : ''}`}>
+        <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link to="/models" onClick={closeMenu}>Models</Link>
+        <Link to="/features" onClick={closeMenu}>Features</Link>
+        <Link to="/technology" onClick={closeMenu}>Technology</Link>
+        <Link to="/book" className="btn btn-primary" onClick={closeMenu} style={{marginTop: '20px', textAlign: 'center'}}>Book Test Ride</Link>
+      </div>
     </nav>
   );
 }
